@@ -11,6 +11,17 @@ body{
     margin-right: 40px;
     color: white;
 }
+table{
+    margin: auto;
+    border: solid 0px white;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0D318D;
+    color: White;
+}
+
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -24,6 +35,7 @@ main{
 header{
     grid-area: h;
     background-color: #0D318D;
+    text-align: center;
 }
 article{
     grid-area: a;
