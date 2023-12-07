@@ -1,0 +1,51 @@
+img{
+    width: 5%;
+}
+#juve{
+    height: 100px;
+    width: 4%;
+}
+body{
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "a a s"
+    "a a s"
+    "f f f";
+    }
+header{
+    grid-area: h;
+    background-color: #0D318D;
+}
+article{
+    grid-area: a;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #106FA2;
+    text-align: center;
+}
+nav{
+    grid-area: n;
+    background-color: #0D318D;
+}
+footer{
+    grid-area: f;
+    background-color: #0D318D;
+    text-align: center;
+}
+aside{
+    grid-area: s;
+    background-color: #106FA2;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
