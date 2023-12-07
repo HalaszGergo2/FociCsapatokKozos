@@ -1,16 +1,23 @@
-img{
-    width: 15%;
+.menu{
+    width: 20%;
 }
-
+.csapat{
+    width: 100%;
+}
 #juve{
-    height: 82px;
-    width: 15%;
+    height: 105px;
+    width: 13%;
 }
-
+aside li{
+    list-style-type: none;
+    margin-right: 15px;
+}
 body{
-    background-color: white;
-    margin-left: 40px;
-    margin-right: 40px;
+    background-image: url(img/hatter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 80px;
+    margin-right: 80px;
     color: white;
 }
 table{
@@ -20,7 +27,7 @@ table{
     margin-bottom: 10px;
     text-align: center;
     padding: 10px;
-    background-color: #0D318D;
+    background-color: #8d9c75;
     color: White;
 }
 
@@ -36,7 +43,7 @@ main{
     }
 header{
     grid-area: h;
-    background-color: #0D318D;
+    font-size: 25px;
     text-align: center;
 }
 article{
@@ -44,22 +51,29 @@ article{
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #106FA2;
+    background-color: #233725;
     text-align: center;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
 }
 nav{
     grid-area: n;
-    background-color: #0D318D;
+    
 }
 footer{
     grid-area: f;
-    background-color: #0D318D;
+    font-size: 20px;
+    color: white;
     text-align: center;
 }
 aside{
+    text-align: center;
     grid-area: s;
-    background-color: #106FA2;
-    margin-right: 5px;
+    background-color: #233725;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -74,4 +88,40 @@ nav ul{
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "c c"
+    "e e"
+    "p p"
+    "d o"
+    "t t";
+}
+p{
+    grid-area: p;
+}
+.dobozok1{
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 5%;
+    grid-area: d;
+    background-color: #8d9c75;
+}
+.dobozok2{
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 5%;
+    grid-area: o;
+    background-color: #8d9c75;;
+}
+table{
+    grid-area: t;
+}
+h2{
+    grid-area: c;
+}
+#eros{
+    grid-area: e;
 }
