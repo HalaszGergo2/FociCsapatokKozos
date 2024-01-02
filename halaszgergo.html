@@ -7,12 +7,12 @@
     <meta name="keywords" content="Focicsapatok, kedvenc">
     <meta name="author" content="Halász Gergő, Baksa Bence">
     <title>BaksaBence, HalászGergő</title>
-    <link rel="stylesheet" href="stilus.css">
+    <link rel="stylesheet" href="chelseacss.css">
 </head>
 <body>
     <main>
         <header>
-            <h1>Üdvözlünk a focis oldalunkon!</h1>
+            <h1>Chelsea FC</h1>
         </header>
         <nav>
             <ul>
@@ -22,10 +22,59 @@
             </ul>
         </nav>
         <article>
-           
+            <div class="keret">
+                <h2>Bemutató</h2>
+                <p>A Chelsea Football Club, röviden Chelsea FC profi angol labdarúgóklub, melynek székhelye Nyugat-Londonban, Fulhamben található. 1905-ben alapították, jelenleg az FA Premier League-ben szerepel. A klub hazai mérkőzéseit alapítása óta a Stamford Bridge-en játssza, mely 41 837 férőhelyes. A Chelsea első nagy sikerét 1955-ben érte el, amikor megnyerte a bajnokságot. A gárda összességében hatszoros angol bajnok, nyolcszoros FA-kupa, négyszeres Angol Ligakupa és szintén négyszeres FA Community Shield győztes. Európai szinten kétszeres Kupagyőztesek Európa-kupája és Európa-liga-győztes, illetve az első és eddig egyetlen londoni klub, amely megnyerte a Bajnokok Ligáját.</p>
+            </div>
+            <div class="tort">
+                <h2>Történelem</h2>
+                <p>1904-ben Gus Mears megszerezte a Stamford Bridge atlétikai stadiont, azonban ő futballpályaként szerette volna használni. Bérlését Fulham közelében elutasították, így Mears úgy döntött, saját klubot alapít, mely használni fogja majd a stadiont. Mivel már létezett egy Fulham nevű klub, olyan nevek kerültek szóba, mint Kensington FC, Stamford Bridge FC és London FC. Végül Chelsea néven alakult meg a gárda 1905. március 10-én a Felkelő nap pubban (napjainkban Hentesek csapdája), mely a Fulham Road bejáratával szemben található meg, és elindulhatott a másodosztályban.</p>
+            </div>
+            <div class="stad">
+                <h2>Stadion</h2>
+                <p>A klub stadionja a Stamford Bridge, ahol a Chelsea a megalapítás óta játssza hazai mérkőzéseit. Hivatalosan 1877. április 28-án nyitották meg, az ezt követő 28 év során pedig a London Athletics Club atlétikai versenyeinek szolgált otthonul. 1904-ben Gus és J T Mears megvásárolták, hogy futballpályává alakítsák át a Bridge-et, melyet aztán Archibald Leitch tervezett meg. A stadiont felajánlották a Fulham FC-nek, a visszautasítás azonban arra ösztönözte a tulajdonosokat, hogy saját klubot alapítsanak. Így született meg a Chelsea.</p>    
+                
+            </div>
         </article>
         <aside>
-            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img class="meret" src="img/logo.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="img/bajnok.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="img/europa.png" style="width:100%">
+                </div>
+                <script>
+                    let slideIndex = 0;
+                     showSlides();
+     
+                     function showSlides() {
+                     let i;
+                     let slides = document.getElementsByClassName("mySlides");
+                     for (i = 0; i < slides.length; i++) {
+                         slides[i].style.display = "none";
+                     }
+                     slideIndex++;
+                     if (slideIndex > slides.length) {slideIndex = 1}
+                     slides[slideIndex-1].style.display = "block";
+                     setTimeout(showSlides, 3000);
+                     }
+                     
+                     
+                    </script>
+            </div>
+            <div class="kepek">
+                <img src="img/stadion.JPG" alt="stadion">
+            </div>
         </aside>
         <footer>
             <p><strong> Baksa Bence, Halász Gergő 2023 &#169; </strong></p>

@@ -93,11 +93,9 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "c c"
-    "e e"
-    "p p"
-    "d o"
-    "t t";
+    "k k"
+    "t t"
+    "s s";
 }
 p{
     grid-area: p;
@@ -116,15 +114,62 @@ p{
     grid-area: o;
     background-color: #8d9c75;;
 }
-table{
-    grid-area: t;
-}
 h2{
     grid-area: c;
 }
-#eros{
-    grid-area: e;
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  padding: 15px;
 }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+.keret{
+    grid-area: k;
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+.tort{
+    grid-area: t;
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+.stad{
+    grid-area: s;
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+.kepek img{
+    max-width: 500px;
+}
+
 @media only screen and (max-width: 800px) {
     main{
         display: grid;
@@ -141,12 +186,9 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "c"
-        "e"
-        "p"
-        "d"
-        "o"
-        "t";
+        "k"
+        "t"
+        "s";
     }
     .menu{
         width: 50%;
