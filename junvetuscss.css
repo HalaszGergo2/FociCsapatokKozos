@@ -5,6 +5,10 @@
     width: 15%;
     
 }
+.csapat{
+    width: 100%;
+}
+
 aside li{
     list-style-type: none;
     margin-right: 15px;
@@ -120,6 +124,15 @@ p{
     background-color: #8d9c75;;
 }
 
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "k k"
+    "t t"
+    "s s";
+}
 
 h2{
     grid-area: c;
