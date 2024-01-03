@@ -21,9 +21,6 @@ body{
     color: white;
 }
 
-
-
-
 main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,7 +30,8 @@ main{
     "a a s"
     "a a s"
     "f f f";
-    }
+}
+
 header{
     grid-area: h;
     font-size: 25px;
@@ -125,6 +123,7 @@ p{
     background-color: #8d9c75;;
 }
 
+
 h2{
     grid-area: c;
 }
@@ -147,12 +146,9 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "c"
-        "e"
-        "p"
-        "d"
-        "o"
-        "t";
+        "k"
+        "t"
+        "s";
     }
     .menu{
         width: 50%;
