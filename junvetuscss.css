@@ -1,0 +1,165 @@
+.menu{
+    width: 20%;
+}
+.csapat{
+    width: 100%;
+}
+#juve{
+    height: 104px;
+    width: 13%;
+}
+aside li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+body{
+    background-image: url(img/hatter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+}
+
+
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "a a s"
+    "a a s"
+    "f f f";
+    }
+header{
+    grid-area: h;
+    font-size: 25px;
+    text-align: center;
+}
+article{
+    grid-area: a;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #233725;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+nav{
+    grid-area: n;
+    
+}
+footer{
+    grid-area: f;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+aside{
+    text-align: center;
+    grid-area: s;
+    background-color: #233725;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.tudnivalok{
+    grid-area: k;
+    border: 0px solid white;
+    margin: 30px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+
+.tortenete{
+    grid-area: t;
+    border: 0px solid white;
+    margin: 50px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+
+.stadion{
+    grid-area: s;
+    border: 0px solid white;
+    margin: 50px;
+    border-radius: 10%;
+    background-color: #8d9c75;
+}
+
+nav li{
+    display: inline;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+p{
+    grid-area: p;
+}
+.dobozok1{
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 5%;
+    grid-area: d;
+    background-color: #8d9c75;
+}
+.dobozok2{
+    border: 0px solid white;
+    margin: 25px;
+    border-radius: 5%;
+    grid-area: o;
+    background-color: #8d9c75;;
+}
+
+h2{
+    grid-area: c;
+}
+#eros{
+    grid-area: e;
+}
+@media only screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "a"
+        "s"
+        "f"
+    }
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "c"
+        "e"
+        "p"
+        "d"
+        "o"
+        "t";
+    }
+    .menu{
+        width: 50%;
+    }
+    
+    #juve{
+        height: 105px;
+        width: 30%;
+    }
+  }
